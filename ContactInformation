@@ -1,0 +1,28 @@
+package template.example2;
+
+public abstract class ContactInformation{
+	
+	final void GetContactInformation(){
+		
+		GetContactName();
+		GetMainAddress();
+		GetAssociatedClaim();
+		GetTelephone();
+		
+	}
+	
+	
+	
+	abstract void GetContactName();
+	abstract void GetMainAddress();
+	abstract void GetAssociatedClaim();
+	
+	void GetAssociatedClaim2(){System.out.println("No tiene claim 2");}
+	void GetAssociatedClaim3(){System.out.println("No tiene claim 3");}
+	
+	void GetTelephone(){
+		System.out.println("123456");
+	};
+	
+	
+}
