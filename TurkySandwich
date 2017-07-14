@@ -1,0 +1,42 @@
+package template.example1;
+
+/**
+ * Created by Emmanuel on 13/07/2017.
+ */
+public class TurkySandwich extends Sandwich{
+
+    String[] vegetables = {"lettuce","Tomate"};
+    String[] condiments = {"salt","oil"};
+
+    @Override
+    boolean CustomerWantsChicken() { return false; }
+
+    @Override
+    protected void AddChicken() {
+    			System.out.println("POLLLOOOOOOO ");
+    }
+
+    @Override
+    protected void AddTurkey() {
+        System.out.println("Add Turkey");
+    }
+
+    @Override
+    protected void AddSalad() {
+        for (String vege: vegetables ) {
+            System.out.println("Add "+vege);
+        }
+    }
+
+    @Override
+    protected void AddCondiments() {
+        for (String condi: condiments ) {
+            System.out.println("Add "+ condi);
+        }
+    }
+
+    @Override
+    void cutAbread() {
+        super.cutAbread();
+    }
+}
