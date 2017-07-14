@@ -1,16 +1,36 @@
 package template.example2;
 
+import java.util.Scanner;
+
 public class CreateNewContact {
 
 	
 	public static void main(String[]args)throws Exception{
 		
-		ContactInformation contact1 = new MSLInformation();
-		contact1.GetContactInformation();
 		
-		ContactInformation contact2 = new CreditorInformation();
-		contact2.GetContactInformation();
+		Scanner input = new Scanner(System.in);
+		sentOptions();
+		String answer = input.nextLine();
 		
+		if(answer.equals("1") || answer.equals("MSL") ){
+			ContactInformation contact1 = new MSLInformation();
+			contact1.GetContactInformation();
+		}
+		if(answer.equals("2") || answer.equals("CREDITOR")){
+			ContactInformation contact2 = new CreditorInformation();
+			contact2.GetContactInformation();
+		}
 	}
 	
+	static void sentOptions(){
+		System.out.println("**************************");
+		System.out.println("Que contacto desea crear:");
+		System.out.println("1 - MSL");
+		System.out.println("2 - CREDITOR");
+		System.out.println("**************************");
+		System.out.println("Ingrese nro:");
+		
+	}
 }
+
+
