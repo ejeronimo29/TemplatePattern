@@ -1,0 +1,46 @@
+package template.example1;
+
+/**
+ * Created by Emmanuel on 13/07/2017.
+ */
+public abstract class Sandwich {
+
+    final void makeASandwich(){
+
+        cutAbread();
+
+        if(CustomerWantsChicken()){
+            AddChicken();
+        }
+
+        if(CustomerWantsTurkey()){
+            AddTurkey();
+        }
+
+        if(CustomerWantsSalad()){
+            AddSalad();
+        }
+
+        if(CustomerWantsCondiments()){
+        	
+              AddCondiments();
+        }
+        
+        System.out.println("\n");
+        System.out.println("********************");
+       
+    }
+
+    protected abstract void AddChicken();
+    protected abstract void AddTurkey();
+    protected abstract void AddSalad();
+    protected abstract void AddCondiments();
+
+    void cutAbread(){System.out.println("Cut a bread");}
+
+    boolean CustomerWantsCondiments() {return true;  }
+    boolean CustomerWantsChicken() { return true;   }
+    boolean CustomerWantsTurkey() { return true;   }
+    boolean CustomerWantsSalad() { return true;   }
+
+}
