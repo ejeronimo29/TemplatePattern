@@ -1,0 +1,16 @@
+package template.example2;
+
+public class CreateNewContact {
+
+	
+	public static void main(String[]args)throws Exception{
+		
+		ContactInformation contact1 = new MSLInformation();
+		contact1.GetContactInformation();
+		
+		ContactInformation contact2 = new CreditorInformation();
+		contact2.GetContactInformation();
+		
+	}
+	
+}
