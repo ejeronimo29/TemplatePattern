@@ -1,0 +1,26 @@
+package template.example2;
+
+public class MSLInformation extends ContactInformation {
+
+	@Override
+	void GetContactName() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void GetMainAddress() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void GetAssociatedClaim() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	
+}
